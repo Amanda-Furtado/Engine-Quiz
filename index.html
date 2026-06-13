@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Questionário</title>
+<style>
+
+    
+body{
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    background-image: url("imagens/adeviso.png");
+    background-size: 15%;
+    background-position: 852px 354px;
+    background-repeat: no-repeat;
+}
+
+.pergunta{
+    margin-bottom: 20px;
+}
+
+#resultado{
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    display: none;
+}
+.pergunta{
+    margin-bottom: 20px;
+    display: none;
+}
+
+.pergunta.ativa{
+    display: block;
+}
+
+#enviar{
+    display: none;
+}
+
+#progresso{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.barra{
+    width: 100%;
+    height: 20px;
+    background: #faf5fd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#barra-preenchida{
+    width: 0%;
+    height: 100%;
+    background: #f7ad40;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+</style>
+</head>
+<img src="imagens/Capa-PDHC.png" width="100%" class="logo-topo">
+<link rel="stylesheet" href="style.css"
+
+<body>
+    
+
+<h1><div id="progresso"></div>
+
+<div class="barra">
+    <div id="barra-preenchida"></div>
+</div>Quem Cuida da Casa? Descubra se a divisão está justa</h1>
+
+<form id="formulario">
+
+    <div class="pergunta">
+        <p>Quem na maioria das vezes cuida de pessoas doentes em casa?</p>
+        <label><input type="radio" name="q1" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q1" value="Homem"> Homem</label>
+        <label><input type="radio" name="q1" value="Ambo igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem lembra das consultas médicas da família?</p>
+        <label><input type="radio" name="q2" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q2" value="Homem"> Homem</label>
+        <label><input type="radio" name="q2" value="Ambos igualmente"> Ambos</label>
+    </div>
+    
+    <div class="pergunta">
+        <p>Quem organiza a rotina das crianças?</p>
+        <label><input type="radio" name="q3" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q3" value="Homem"> Homem</label>
+        <label><input type="radio" name="q3" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem prepara o material escolar ou acompanha tarefas?</p>
+        <label><input type="radio" name="q4" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q4" value="Homem"> Homem</label>
+        <label><input type="radio" name="q4" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem costuma acordar mais cedo para cuidar da casa ou da família?</p>
+        <label><input type="radio" name="q5" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q5" value="Homem"> Homem</label>
+        <label><input type="radio" name="q5" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem normalmente interrompe seus compromissos para resolver questões familiares?</p>
+        <label><input type="radio" name="q6" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q6" value="Homem"> Homem</label>
+        <label><input type="radio" name="q6" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem lava a louça na maioria das vezes?</p>
+        <label><input type="radio" name="q7" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q7" value="Homem"> Homem</label>
+        <label><input type="radio" name="q7" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem limpa banheiro, cozinha e quartos?</p>
+        <label><input type="radio" name="q8" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q8" value="Homem"> Homem</label>
+        <label><input type="radio" name="q8" value="Ambo igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem lava e organiza as roupas?</p>
+        <label><input type="radio" name="q9" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q9" value="Homem"> Homem</label>
+        <label><input type="radio" name="q9" value="Ambos igualmente"> Ambos</label>
+    </div>
+    
+    <div class="pergunta">
+        <p>Quem faz comida diariamente?</p>
+        <label><input type="radio" name="q10" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q10" value="Homem"> Homem</label>
+        <label><input type="radio" name="q10" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem percebe primeiro quando falta comida ou produtos de limpeza?</p>
+        <label><input type="radio" name="q11" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q11" value="Homem"> Homem</label>
+        <label><input type="radio" name="q11" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem organiza compras do mercado?</p>
+        <label><input type="radio" name="q12" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q12" value="Homem"> Homem</label>
+        <label><input type="radio" name="q12" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem lembra aniversários, reuniões e compromissos da família?</p>
+        <label><input type="radio" name="q13" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q13" value="Homem"> Homem</label>
+        <label><input type="radio" name="q13" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem planeja o que precisa ser feito dentro de casa?</p>
+        <label><input type="radio" name="q14" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q14" value="Homem"> Homem</label>
+        <label><input type="radio" name="q14" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem costuma assumir várias tarefas ao mesmo tempo no ambiente doméstico?</p>
+        <label><input type="radio" name="q15" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q15" value="Homem"> Homem</label>
+        <label><input type="radio" name="q15" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem é mais cobrado quando a casa está desorganizada?</p>
+        <label><input type="radio" name="q16" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q16" value="Homem"> Homem</label>
+        <label><input type="radio" name="q16" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem tem menos tempo livre por causa das tarefas domésticas?</p>
+        <label><input type="radio" name="q17" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q17" value="Homem"> Homem</label>
+        <label><input type="radio" name="q17" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <div class="pergunta">
+        <p>Quem costuma deixar de descansar para cuidar da casa e da família?</p>
+        <label><input type="radio" name="q18" value="Mulher"> Mulher</label>
+        <label><input type="radio" name="q18" value="Homem"> Homem</label>
+        <label><input type="radio" name="q18" value="Ambos igualmente"> Ambos</label>
+    </div>
+
+    <button type="button" id="voltar">Voltar</button>
+    <button type="button" id="proximo">Próxima</button>
+    <button type="submit" id="enviar">Enviar</button>
+</form>
+
+<div id="resultado"></div>
+<script>
+const larguraMonitor = window.screen.width;
+const alturaMonitor = window.screen.height;
+</script>
+<script>
+const perguntas = document.querySelectorAll(".pergunta");
+
+let atual = 0;
+
+function mostrarPergunta(){
+
+    perguntas.forEach(p =>
+        p.classList.remove("ativa")
+    );
+
+    perguntas[atual].classList.add("ativa");
+
+    document.getElementById("progresso").innerHTML =
+        `Pergunta ${atual + 1} de ${perguntas.length}`;
+
+    let porcentagem =
+        ((atual + 1) / perguntas.length) * 100;
+
+    document.getElementById("barra-preenchida").style.width =
+        porcentagem + "%";
+
+    document.getElementById("voltar").style.display =
+        atual === 0 ? "none" : "inline-block";
+
+    document.getElementById("proximo").style.display =
+        atual === perguntas.length - 1 ? "none" : "inline-block";
+
+    document.getElementById("enviar").style.display =
+        atual === perguntas.length - 1 ? "inline-block" : "none";
+}
+
+mostrarPergunta();
+
+document.getElementById("proximo").addEventListener("click", () => {
+
+    const resposta =
+        perguntas[atual].querySelector("input:checked");
+
+    if(!resposta){
+        alert("Selecione uma resposta antes de continuar.");
+        return;
+    }
+
+    atual++;
+    mostrarPergunta();
+});
+
+document.getElementById("voltar").addEventListener("click", () => {
+
+    if(atual > 0){
+        atual--;
+        mostrarPergunta();
+    }
+});
+</script>
+
+<script>
+document.getElementById("formulario").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let pontos = 0;
+
+    document.querySelectorAll('input[type="radio"]:checked')
+        .forEach(r => {
+            if(r.value === "Mulher"){
+                pontos++;
+            }
+        });
+
+    let mensagem;
+    let submensagem;
+
+    if(pontos <= 3){
+        mensagem = "Há sinais de uma divisão mais equilibrada.";
+        submensagem = "As responsabilidades parecem estar sendo compartilhadas. Continuem construindo relações mais justas e colaborativas";
+    }
+    else if(pontos <= 7){
+        mensagem = "Atenção: a divisão pode não estar equilibrada.";
+        submensagem = "Algumas tarefas e responsabilidades ainda recaem mais sobre as mulheres. Conversar e reorganizar a rotina pode tornar a convivência mais justa.";
+    }
+    else if(pontos <= 12){
+        mensagem = "A divisão do trabalho doméstico está desigual.";
+        submensagem = "Grande parte das tarefas de cuidado e organização está concentrada nas mulheres. É importante rever atitudes e promover uma divisão mais justa das responsabilidades.";
+    }
+    else{
+        mensagem = "Sobrecarga feminina identificada.";
+        submensagem = "O trabalho doméstico e de cuidado está sendo realizado majoritariamente por mulheres. Dividir tarefas é uma questão de respeito, igualdade e bem-estar para toda a família.";
+    }
+
+    const resultado = document.getElementById("resultado");
+
+    resultado.style.display = "block";
+    resultado.innerHTML = ` 
+        <h2>Resultado</h2>
+        <h3>${mensagem}</h3>
+        <label>${submensagem}</label>
+    `;
+});
+</script>
+
+</body>
+</html>
