@@ -36,7 +36,9 @@ label {
     display: block; /* Garante que o rótulo fique acima do input */
 }
 
-.resultado {
-  display: block;
-  border: 2px solid #ff0000; /* Borda vermelha de 2px */
+.imagem-fixa {
+  position: fixed;
+  bottom: 852px; /* Distância da parte de baixo */
+  right: 354px;  /* Distância da parte da direita */
+  z-index: 999; /* Garante que ela fique por cima de tudo */
 }
