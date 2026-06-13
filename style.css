@@ -38,8 +38,8 @@ label {
 
 .imagem-fixa {
   position: fixed;
-  size: 20%;
-  bottom: 852px; /* Distância da parte de baixo */
-  right: 354px;  /* Distância da parte da direita */
-  z-index: 999; /* Garante que ela fique por cima de tudo */
+  size: 25%;
+  bottom: -200px; /* Distância da parte de baixo */
+  right: -30px;  /* Distância da parte da direita */
+  z-index: -1; /* Garante que ela fique por cima de tudo */
 }

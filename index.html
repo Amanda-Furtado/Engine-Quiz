@@ -10,14 +10,25 @@ body{
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 40px auto;
-    background-color: #ffffff;
-    background-image: url("imagens/adeviso.png");
-    background-size: 15%;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed
+    position: relative;
 }
 
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('imagens/adeviso.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+
+    opacity: 0.2; /* ajuste aqui */
+    z-index: -1;
+}
 .pergunta{
     margin-bottom: 20px;
 }
@@ -67,7 +78,6 @@ body{
 <link rel="stylesheet" href="style.css"
 
 <body>
-    
 <!-- <img src="imagens/adeviso.png" class="imagem-fixa"> -->
 <h1><div id="progresso"></div>
 
