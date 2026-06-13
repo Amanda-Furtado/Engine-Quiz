@@ -36,10 +36,28 @@ label {
     display: block; /* Garante que o rótulo fique acima do input */
 }
 
-.imagem-fixa {
+/* .imagem-fixa {
   position: fixed;
-  size: 25%;
-  bottom: -200px; /* Distância da parte de baixo */
-  right: -30px;  /* Distância da parte da direita */
-  z-index: -1; /* Garante que ela fique por cima de tudo */
+  width: 200px;
+  opacity: 1;
+  z-index: -1;
+} */
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#formulario {
+    flex: 1;
+    z-index: 2;
+}
+
+.adesivo img {
+    height: 200px; /* altura fixa */
+    opacity: 0.3;
+    width: auto;   /* mantém a proporção */
+    z-index: 0;
 }

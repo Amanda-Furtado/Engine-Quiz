@@ -9,26 +9,12 @@
 body{
     font-family: Arial, sans-serif;
     max-width: 800px;
+    max-height: 800px;
     margin: 40px auto;
     position: relative;
 }
 
-body::before{
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-    background-image: url('imagens/adeviso.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 15%;
-
-    opacity: 0.1; /* ajuste aqui */
-    z-index: -1;
-}
 .pergunta{
     margin-bottom: 20px;
 }
@@ -78,146 +64,151 @@ body::before{
 <link rel="stylesheet" href="style.css"
 
 <body>
-<!-- <img src="imagens/adeviso.png" class="imagem-fixa"> -->
+
 <h1><div id="progresso"></div>
 
 <div class="barra">
     <div id="barra-preenchida"></div>
+   
 </div>Quem Cuida da Casa? Descubra se a divisão está justa</h1>
+<div class="conteudo">
+    <form id="formulario">
 
-<form id="formulario">
+        <div class="pergunta">
+            <p>Quem na maioria das vezes cuida de pessoas doentes em casa?</p>
+            <label><input type="radio" name="q1" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q1" value="Homem"> Homem</label>
+            <label><input type="radio" name="q1" value="Ambo igualmente"> Ambos</label>
+        </div>
 
-    <div class="pergunta">
-        <p>Quem na maioria das vezes cuida de pessoas doentes em casa?</p>
-        <label><input type="radio" name="q1" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q1" value="Homem"> Homem</label>
-        <label><input type="radio" name="q1" value="Ambo igualmente"> Ambos</label>
+        <div class="pergunta">
+            <p>Quem lembra das consultas médicas da família?</p>
+            <label><input type="radio" name="q2" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q2" value="Homem"> Homem</label>
+            <label><input type="radio" name="q2" value="Ambos igualmente"> Ambos</label>
+        </div>
+        
+        <div class="pergunta">
+            <p>Quem organiza a rotina das crianças?</p>
+            <label><input type="radio" name="q3" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q3" value="Homem"> Homem</label>
+            <label><input type="radio" name="q3" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem prepara o material escolar ou acompanha tarefas?</p>
+            <label><input type="radio" name="q4" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q4" value="Homem"> Homem</label>
+            <label><input type="radio" name="q4" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem costuma acordar mais cedo para cuidar da casa ou da família?</p>
+            <label><input type="radio" name="q5" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q5" value="Homem"> Homem</label>
+            <label><input type="radio" name="q5" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem normalmente interrompe seus compromissos para resolver questões familiares?</p>
+            <label><input type="radio" name="q6" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q6" value="Homem"> Homem</label>
+            <label><input type="radio" name="q6" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem lava a louça na maioria das vezes?</p>
+            <label><input type="radio" name="q7" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q7" value="Homem"> Homem</label>
+            <label><input type="radio" name="q7" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem limpa banheiro, cozinha e quartos?</p>
+            <label><input type="radio" name="q8" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q8" value="Homem"> Homem</label>
+            <label><input type="radio" name="q8" value="Ambo igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem lava e organiza as roupas?</p>
+            <label><input type="radio" name="q9" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q9" value="Homem"> Homem</label>
+            <label><input type="radio" name="q9" value="Ambos igualmente"> Ambos</label>
+        </div>
+        
+        <div class="pergunta">
+            <p>Quem faz comida diariamente?</p>
+            <label><input type="radio" name="q10" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q10" value="Homem"> Homem</label>
+            <label><input type="radio" name="q10" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem percebe primeiro quando falta comida ou produtos de limpeza?</p>
+            <label><input type="radio" name="q11" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q11" value="Homem"> Homem</label>
+            <label><input type="radio" name="q11" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem organiza compras do mercado?</p>
+            <label><input type="radio" name="q12" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q12" value="Homem"> Homem</label>
+            <label><input type="radio" name="q12" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem lembra aniversários, reuniões e compromissos da família?</p>
+            <label><input type="radio" name="q13" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q13" value="Homem"> Homem</label>
+            <label><input type="radio" name="q13" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem planeja o que precisa ser feito dentro de casa?</p>
+            <label><input type="radio" name="q14" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q14" value="Homem"> Homem</label>
+            <label><input type="radio" name="q14" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem costuma assumir várias tarefas ao mesmo tempo no ambiente doméstico?</p>
+            <label><input type="radio" name="q15" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q15" value="Homem"> Homem</label>
+            <label><input type="radio" name="q15" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem é mais cobrado quando a casa está desorganizada?</p>
+            <label><input type="radio" name="q16" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q16" value="Homem"> Homem</label>
+            <label><input type="radio" name="q16" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem tem menos tempo livre por causa das tarefas domésticas?</p>
+            <label><input type="radio" name="q17" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q17" value="Homem"> Homem</label>
+            <label><input type="radio" name="q17" value="Ambos igualmente"> Ambos</label>
+        </div>
+
+        <div class="pergunta">
+            <p>Quem costuma deixar de descansar para cuidar da casa e da família?</p>
+            <label><input type="radio" name="q18" value="Mulher"> Mulher</label>
+            <label><input type="radio" name="q18" value="Homem"> Homem</label>
+            <label><input type="radio" name="q18" value="Ambos igualmente"> Ambos</label>
+        </div>
+        
+        <button type="button" id="voltar">Voltar</button>
+        <button type="button" id="proximo">Próxima</button>
+        <button type="submit" id="enviar">Enviar</button>
+
+    </form>
+    <div class="adesivo">
+        <img src="imagens/adeviso.png" >
     </div>
-
-    <div class="pergunta">
-        <p>Quem lembra das consultas médicas da família?</p>
-        <label><input type="radio" name="q2" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q2" value="Homem"> Homem</label>
-        <label><input type="radio" name="q2" value="Ambos igualmente"> Ambos</label>
-    </div>
-    
-    <div class="pergunta">
-        <p>Quem organiza a rotina das crianças?</p>
-        <label><input type="radio" name="q3" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q3" value="Homem"> Homem</label>
-        <label><input type="radio" name="q3" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem prepara o material escolar ou acompanha tarefas?</p>
-        <label><input type="radio" name="q4" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q4" value="Homem"> Homem</label>
-        <label><input type="radio" name="q4" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem costuma acordar mais cedo para cuidar da casa ou da família?</p>
-        <label><input type="radio" name="q5" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q5" value="Homem"> Homem</label>
-        <label><input type="radio" name="q5" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem normalmente interrompe seus compromissos para resolver questões familiares?</p>
-        <label><input type="radio" name="q6" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q6" value="Homem"> Homem</label>
-        <label><input type="radio" name="q6" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem lava a louça na maioria das vezes?</p>
-        <label><input type="radio" name="q7" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q7" value="Homem"> Homem</label>
-        <label><input type="radio" name="q7" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem limpa banheiro, cozinha e quartos?</p>
-        <label><input type="radio" name="q8" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q8" value="Homem"> Homem</label>
-        <label><input type="radio" name="q8" value="Ambo igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem lava e organiza as roupas?</p>
-        <label><input type="radio" name="q9" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q9" value="Homem"> Homem</label>
-        <label><input type="radio" name="q9" value="Ambos igualmente"> Ambos</label>
-    </div>
-    
-    <div class="pergunta">
-        <p>Quem faz comida diariamente?</p>
-        <label><input type="radio" name="q10" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q10" value="Homem"> Homem</label>
-        <label><input type="radio" name="q10" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem percebe primeiro quando falta comida ou produtos de limpeza?</p>
-        <label><input type="radio" name="q11" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q11" value="Homem"> Homem</label>
-        <label><input type="radio" name="q11" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem organiza compras do mercado?</p>
-        <label><input type="radio" name="q12" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q12" value="Homem"> Homem</label>
-        <label><input type="radio" name="q12" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem lembra aniversários, reuniões e compromissos da família?</p>
-        <label><input type="radio" name="q13" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q13" value="Homem"> Homem</label>
-        <label><input type="radio" name="q13" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem planeja o que precisa ser feito dentro de casa?</p>
-        <label><input type="radio" name="q14" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q14" value="Homem"> Homem</label>
-        <label><input type="radio" name="q14" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem costuma assumir várias tarefas ao mesmo tempo no ambiente doméstico?</p>
-        <label><input type="radio" name="q15" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q15" value="Homem"> Homem</label>
-        <label><input type="radio" name="q15" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem é mais cobrado quando a casa está desorganizada?</p>
-        <label><input type="radio" name="q16" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q16" value="Homem"> Homem</label>
-        <label><input type="radio" name="q16" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem tem menos tempo livre por causa das tarefas domésticas?</p>
-        <label><input type="radio" name="q17" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q17" value="Homem"> Homem</label>
-        <label><input type="radio" name="q17" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <div class="pergunta">
-        <p>Quem costuma deixar de descansar para cuidar da casa e da família?</p>
-        <label><input type="radio" name="q18" value="Mulher"> Mulher</label>
-        <label><input type="radio" name="q18" value="Homem"> Homem</label>
-        <label><input type="radio" name="q18" value="Ambos igualmente"> Ambos</label>
-    </div>
-
-    <button type="button" id="voltar">Voltar</button>
-    <button type="button" id="proximo">Próxima</button>
-    <button type="submit" id="enviar">Enviar</button>
-</form>
-
+</div>
 <div id="resultado"></div>
 <script>
 const larguraMonitor = window.screen.width;
